@@ -5,7 +5,7 @@ import Layout from './pages/Layout'
 import Flags from './pages/Flags'
 import Proverbs from './pages/Proverbs'
 import Riddle from './pages/Riddle'
-import NodePage from './pages/NodePage'
+import NoPage from './pages/NoPage'
 
 export default function App() {
   return (
@@ -17,7 +17,7 @@ export default function App() {
           <Route path="flags" element={<Flags />} />
           <Route path="proverbs" element={<Proverbs />} />
           <Route path="riddle" element={<Riddle />} />
-          <Route path="*" element={<NodePage />} />
+          <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
     </>)
