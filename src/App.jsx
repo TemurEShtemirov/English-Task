@@ -12,13 +12,11 @@ export default function App() {
 
     <>
       <Routes>
-        <Route path="/" element={<Layout />}/>
-          <Route index element={<Home />} />
-          <Route path="/flags" element={<FlagsPage />} />
-          <Route path="/proverbs" element={<Proverbs />} />
-          <Route path="/riddle" element={<Riddle />} />
-          <Route path="*" element={<NoPage />} />
-       
+        <Route index element={<Home />} />
+        <Route path="/flags" element={<FlagsPage />} />
+        <Route path="/proverbs" element={<Proverbs />} />
+        <Route path="/riddle" element={<Riddle />} />
+        <Route path="*" element={<NoPage />} />
       </Routes>
     </>)
 }
