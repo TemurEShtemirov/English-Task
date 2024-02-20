@@ -25,13 +25,13 @@ export default function Home() {
               <CardMedia component="img" height="140" image={Proverbs} alt="Proverbs" />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
-                  Proverbs
+                  To Quickly Say
                 </Typography>
               </CardContent>
             </CardActionArea>
             <CardActions>
               <Button size="small" color="primary" onClick={() => handleOpenModal('Proverbs')}>
-                Share
+                Info
               </Button>
             </CardActions>
           </Card>
@@ -49,7 +49,7 @@ export default function Home() {
             </CardActionArea>
             <CardActions>
               <Button size="small" color="primary" onClick={() => handleOpenModal('Riddle')}>
-                Share
+                Info
               </Button>
             </CardActions>
           </Card>
@@ -67,7 +67,7 @@ export default function Home() {
             </CardActionArea>
             <CardActions>
               <Button size="small" color="primary" onClick={() => handleOpenModal('Flags')}>
-                Share
+                Info
               </Button>
             </CardActions>
           </Card>

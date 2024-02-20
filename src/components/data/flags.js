@@ -22,41 +22,6 @@ export const Flags = [
   },
   {
     id: 3,
-    image: Australia,
-    title: "Australia",
-  },
-  {
-    id: 4,
-    image: Ireland,
-    title: "Ireland",
-  },
-  {
-    id: 5,
-    image: Mexico,
-    title: "Mexico",
-  },
-  {
-    id: 6,
-    image: New_Zealand,
-    title: "New Zealand",
-  },
-  {
-    id: 7,
-    image: South_Africa,
-    title: "South Africa",
-  },
-  {
-    id: 8,
-    image: Trnidad_Tobago,
-    title: "Trinidad and Tobago",
-  },
-  {
-    id: 9,
-    image: Jamaica,
-    title: "Jamaica",
-  },
-  {
-    id: 10,
     image: Canada,
     title: "Canada",
   },
