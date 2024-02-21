@@ -14,9 +14,4 @@ export const quicky_say = [
     title: "To Quickly Say 3",
     description: " Fred fed Ted bread and Ted fed Fred bread",
   },
-  {
-    id: 3,
-    title: "To Quickly Say 5",
-    description: "Five frantic frogs fled from fifty fierce fishes",
-  },
 ]

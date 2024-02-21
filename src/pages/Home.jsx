@@ -21,7 +21,7 @@ export default function Home() {
         <Grid item xs={12} sm={6} md={4}>
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea onClick={() => handleOpenModal('Proverbs')}>
-              <CardMedia component="img" height="140" image="https://ya.ru/images/search?text=to+quickly+say&pos=17&rpt=simage&img_url=https%3A%2F%2Fangliyskiyazik.ru%2Fwp-content%2Fuploads%2F2018%2F05%2Fspeak.jpg&from=tabbar&lr=10335&iorient=horizontal" alt="Proverbs" />
+              <CardMedia component="img" height="140" image="https://ya.ru/images/search?text=to+quickly+say&pos=17&rpt=simage&img_url=https%3A%2F%2Fangliyskiyazik.ru%2Fwp-content%2Fuploads%2F2018%2F05%2Fspeak.jpg&from=tabbar&lr=10335&iorient=horizontal" alt="To Quickly Say" />
               <CardContent>
                 <Typography gutterBottom variant="h5" component="div">
                   To Quickly Say

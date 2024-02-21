@@ -1,12 +1,12 @@
 import Usa from "../../assets/images/usa.png";
 import Uk from "../../assets/images/uk.png";
-import Australia from "../../assets/images/Australia.png";
+// import Australia from "../../assets/images/Australia.png";
 import Ireland from "../../assets/images/Ireland.png";
 import Mexico from "../../assets/images/mexico.png";
-import New_Zealand from "../../assets/images/New_Zealand.png";
-import South_Africa from "../../assets/images/south africa.png";
-import Trnidad_Tobago from "../../assets/images/Trinidad and Tobago.png";
-import Jamaica from "../../assets/images/Jamaica.png";
+// import New_Zealand from "../../assets/images/New_Zealand.png";
+// import South_Africa from "../../assets/images/south africa.png";
+// import Trnidad_Tobago from "../../assets/images/Trinidad and Tobago.png";
+// import Jamaica from "../../assets/images/Jamaica.png";
 import Canada from "../../assets/images/canada.png";
 
 export const Flags = [
@@ -24,5 +24,15 @@ export const Flags = [
     id: 3,
     image: Canada,
     title: "Canada",
+  },
+  {
+    id: 4,
+    image: Ireland,
+    title: "Ireland",
+  },
+  {
+    id: 5,
+    image: Mexico,
+    title: "Mexico",
   },
 ];
