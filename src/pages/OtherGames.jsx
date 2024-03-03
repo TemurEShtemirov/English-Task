@@ -82,7 +82,7 @@ export default function OtherGames() {
                         Additional Info
                     </Typography>
                     <Typography variant="body1" component="div" align="center" margin={5}>
-                        Guess Countries Following Flags" is a game where players identify countries based on their flags. One player displays a flag, and the others guess the corresponding country. It's a fun way to test geography knowledge and learn about different countries' flags.
+                        Guess Countries Following Flags" is a game where players identify countries based on their flags.
                     </Typography>
                     <Button variant="contained" color="primary" style={{ width: "100%" }} onClick={handleNavigate}>
                         Play the Game
