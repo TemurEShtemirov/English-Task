@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Card, CardContent, CardMedia, Typography, Button, CardActionArea, CardActions, Grid, Modal } from '@mui/material';
 import Flags from '../assets/images/flags.png';
+import OtherGames from '../assets/images/othergames.jpg'
 import Riddle from '../assets/images/riddle.png';
 import { Link, Outlet } from 'react-router-dom';
 
@@ -17,8 +18,8 @@ export default function Home() {
 
   return (
     <>
-      <Grid container spacing={2} marginTop={30} marginLeft={7} justifyContent="center" alignItems="center" alignContent="center">
-        <Grid item xs={12} sm={6} md={4}>
+      <Grid container spacing={1} marginTop={30} marginLeft={1} justifyContent="center" alignItems="center" alignContent="center">
+        <Grid item xs={12} sm={6} md={3}>
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea onClick={() => handleOpenModal('Proverbs')}>
               <CardMedia component="img" height="140" image="https://ya.ru/images/search?text=to+quickly+say&pos=17&rpt=simage&img_url=https%3A%2F%2Fangliyskiyazik.ru%2Fwp-content%2Fuploads%2F2018%2F05%2Fspeak.jpg&from=tabbar&lr=10335&iorient=horizontal" alt="To Quickly Say" />
@@ -36,7 +37,7 @@ export default function Home() {
           </Card>
         </Grid>
 
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={12} sm={6} md={3}>
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea onClick={() => handleOpenModal('Riddle')}>
               <CardMedia component="img" height="140" image={Riddle} alt="green iguana" />
@@ -54,7 +55,7 @@ export default function Home() {
           </Card>
         </Grid>
 
-        <Grid item xs={12} sm={6} md={4}>
+        <Grid item xs={12} sm={6} md={3}>
           <Card sx={{ maxWidth: 345 }}>
             <CardActionArea onClick={() => handleOpenModal('Flags')}>
               <CardMedia component="img" height="140" image={Flags} alt="Flags" />
@@ -66,6 +67,25 @@ export default function Home() {
             </CardActionArea>
             <CardActions>
               <Button size="small" color="primary" onClick={() => handleOpenModal('Flags')}>
+                Info
+              </Button>
+            </CardActions>
+          </Card>
+        </Grid>
+
+
+        <Grid item xs={12} sm={6} md={3}>
+          <Card sx={{ maxWidth: 345 }}>
+            <CardActionArea onClick={() => handleOpenModal('OtherGames')}>
+              <CardMedia component="img" height="140" image={OtherGames} alt="OtherGames" />
+              <CardContent>
+                <Typography gutterBottom variant="h5" component="div">
+                  Other Games
+                </Typography>
+              </CardContent>
+            </CardActionArea>
+            <CardActions>
+              <Button size="small" color="primary" onClick={() => handleOpenModal('OtherGames')}>
                 Info
               </Button>
             </CardActions>
@@ -114,7 +134,46 @@ export default function Home() {
           </Link>
         </div>
       </Modal>
-      <Outlet/>
+
+      <Modal open={openModal === 'OtherGames'} onClose={handleCloseModal}>
+        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', backgroundColor: '#fff', padding: '20px' }}>
+          <Typography variant="h4" component="div" align="center">
+
+            Other Games
+          </Typography>
+          <Typography variant="body1" component="div" align="center" width={"auto"} marginTop={5}>
+            <ul>
+              <li>
+                Funny Questions: Have a blast with hilarious riddles like "Why did the tomato turn red?"
+              </li>
+              <li>
+                Describe Your Best Friend: Share stories about your best friend in this personal game.
+
+              </li>
+              <li>
+                Describe Yourself: Reflect on who you are and share your unique traits with others.
+
+              </li>
+              <li>
+                Describe Your Best English Teacher: Recall what made your favorite English teacher special.
+
+              </li>
+              <li>
+                Guess Countries Following Flags: Test your geography skills with this fun flag guessing game.
+
+              </li>
+            </ul>
+          </Typography>
+          <Link className="btn btn-outline-primary mt-3" style={{ width: "100%" }} to={"/other_games"}>
+            Play !
+          </Link>
+        </div>
+      </Modal>
+      <Outlet />
     </>
   );
 }
+
+
+
+
