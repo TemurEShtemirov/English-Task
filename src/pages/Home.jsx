@@ -142,7 +142,7 @@ export default function Home() {
             Other Games
           </Typography>
           <Typography variant="body1" component="div" align="center" width={"auto"} marginTop={5}>
-            <ul>
+{/*             <ul>
               <li>
                 Funny Questions: Have a blast with hilarious riddles like "Why did the tomato turn red?"
               </li>
@@ -162,7 +162,7 @@ export default function Home() {
                 Guess Countries Following Flags: Test your geography skills with this fun flag guessing game.
 
               </li>
-            </ul>
+            </ul> */}
           </Typography>
           <Link className="btn btn-outline-primary mt-3" style={{ width: "100%" }} to={"/other_games"}>
             Play !
